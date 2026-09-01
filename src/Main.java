@@ -19,11 +19,20 @@ public class Main {
 
         ArrayList<String> studentNames = new ArrayList<>(); // creating arraylist of type String to store the names
         ArrayList<Double> grades = new ArrayList<>(); // creating arraylist of type Double to store the marks
+        ArrayList<String> usns = new ArrayList<>(); //creating arraylist of type String to store the usn
+        ArrayList<String> subjects = new ArrayList<>();  // creating arraylist of type String to store the subjects
+
 
         for(int i = 0 ; i < numberOfStudents ; i++){ // for loop to take the inputs of different student
 
-            System.out.println("enter the name of student " + (i+1) + ":"); //the loop runs once for each student.
+            System.out.println("\n-----student " + (i+1) + "-----"); //the loop runs once for each student.
+
+            System.out.println("enter the USN" + (i+1) + ":");
+            String usn = scanner.nextLine();
+            System.out.println("enter the name of the student:");
             String name = scanner.nextLine(); //String type of ip
+            System.out.println("enter the subject name");
+            String subject = scanner.nextLine();
 
             double grade;
             while (true) {
@@ -43,8 +52,11 @@ public class Main {
 
             }
 
-            studentNames.add(name);
+
+            studentNames.add(name); // puts the entered names to the arraylist
             grades.add(grade); //puts the entered grades into our ArrayLists
+            usns.add(usn);
+            subjects.add(subject);
         }
 
 
@@ -66,15 +78,15 @@ public class Main {
                 lowest=grade;
             }
         }
-        System.out.println("\n========== SUMMARY ============");
+        System.out.println("\n======================================== SUMMARY ==========================================");
         for(int i = 0 ; i<studentNames.size() ; i++){
-            System.out.printf("%-20s : %.2f%n", studentNames.get(i), grades.get(i)); //It gives the names a fixed amount of space, so your output lines up neatly
+            System.out.printf("USN: %-15s | Name: %-15s | Subject: %-20s | Grade: %.2f%n", usns.get(i), studentNames.get(i), subjects.get(i),grades.get(i)); //It gives the names a fixed amount of space, so your output lines up neatly
         }
-        System.out.println("-------------------------------");
+        System.out.println("-------------------------------------------------------------------------------------------");
         System.out.printf("average grade :%.2f%n", avg);  //prints avg only upto 2 decimal places
         System.out.printf("Highest Grade : %.2f%n", highest);
         System.out.printf("lowest grade : %.2f%n", lowest);
-        System.out.println("===============================");
+        System.out.println("============================================================================================");
         scanner.close();
 
     }

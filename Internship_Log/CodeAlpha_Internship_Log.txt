@@ -1,0 +1,27 @@
+Project: Student Grade Tracker
+
+Today's work:
+
+Received CodeAlpha Java Programming internship offer.
+Read the internship tasks and requirements.
+Selected Student Grade Tracker as Task 1.
+Created CODE-ALPHA folder.
+Created CodeAlpha_StudentGradeTracker project folder.
+Opened the project in IntelliJ IDEA.
+Configured the Java project and src folder.
+Created Main.java.
+Tested the Java program successfully.
+Learned about the requirements of the Student Grade Tracker.
+Planned to use ArrayList and Scanner.
+
+What I learned:
+
+How to create a Java project in IntelliJ IDEA.
+How to create a Java class.
+Basic use of ArrayList and Scanner.
+
+Next day's plan:
+
+Implement student input.
+Store student names and grades.
+Start calculating grades.
